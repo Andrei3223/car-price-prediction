@@ -118,7 +118,7 @@ def get_result(df: pd.DataFrame):
         '''
         res = model.predict(df)
         # st.markdown('<p class="big-font">%$res%</p>', unsafe_allow_html=True)
-        st.write(f'{res[0]:0,.2f}', '$',
+        st.write(f'{res[0]:0,.2f}', 'rubles',
                  unsafe_allow_html=True)
         # st.write(res[0])
 
