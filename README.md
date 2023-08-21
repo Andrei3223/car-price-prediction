@@ -4,6 +4,8 @@ In this project linear regression is used to predict the price of vehicle on the
 such characteristics as car's year of manufacture, car mileage, fuel type and so on.
 
 
+Try app [here](https://predict-the-car-price.streamlit.app/)!
+
 ## Files
 
 - `app.py`: streamlit app file
