@@ -47,9 +47,9 @@ def get_dataframe():
     # reading data
     col1, col2 = st.columns([1, 1])
     with col1:
-        year = st.number_input("The year of manufacture", 2019)
+        year = st.number_input("The year of manufacture", min_value=1885, max_value=None, value=2019)
     with col2:
-        driven = st.number_input("km driven", 35000)
+        driven = st.number_input("km driven", value=35000)
 
     col3, col4 = st.columns([1, 1])
     with col3:
@@ -68,11 +68,11 @@ def get_dataframe():
 
     col7, col8, col9 = st.columns([1, 1, 1])
     with col7:
-        mileage = st.number_input("Mileage (in kmpl (km/kg) )", 23)
+        mileage = st.number_input("Mileage (in kmpl (km/kg) )", value=23)
     with col8:
-        engine = st.number_input("Engine volume (in CC)", 1000)
+        engine = st.number_input("Engine volume (in CC)", value=1000)
     with col9:
-        max_power = st.number_input('Max power (in bhp)', 50)
+        max_power = st.number_input('Max power (in bhp)', value=50)
     seats = st.slider(
         "Seats number",
         min_value=1, max_value=30, value=5, step=1)
